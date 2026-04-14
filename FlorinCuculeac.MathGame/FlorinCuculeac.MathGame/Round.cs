@@ -49,6 +49,13 @@ internal class Round
             case Operations.Multilpy:
                 Result = FirstNumber * SecondNumber; OperationAsString = "*"; break;
             case Operations.Division:
+                /* division by 0 */
+                while (SecondNumber == 0)
+                {
+                    SecondNumber = Random.Shared.Next(MaxNumber);
+                }
+
+
                 FirstNumber = SecondNumber * FirstNumber;
                 Result = FirstNumber / SecondNumber;
                 OperationAsString = "/";
