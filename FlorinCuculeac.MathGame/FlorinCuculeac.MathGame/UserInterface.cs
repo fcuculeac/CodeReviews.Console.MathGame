@@ -1,8 +1,6 @@
 ﻿using Spectre.Console;
-using System.Diagnostics;
-using System.Text;
 using static FlorinCuculeac.MathGame.Enums;
-
+using System.Diagnostics;
 namespace FlorinCuculeac.MathGame;
 
 internal class UserInterface
